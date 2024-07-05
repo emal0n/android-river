@@ -6,7 +6,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+DERP_VERSION_APPEND_TIME_OF_DAY=true
 DERP_BUILDTYPE := Official
+TARGET_NOT_USES_BLUR=true
 USE_LEGACY_BOOTANIMATION := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
